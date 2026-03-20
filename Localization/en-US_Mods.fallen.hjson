@@ -1,0 +1,23 @@
+Mods: {
+	ExampleMod: {
+		Items: {
+			Weapons: {
+				example_sword: {
+					DisplayName: 示例长剑
+					Tooltip:
+						'''
+						新手Modder的入门武器
+						+20%暴击率
+						'''
+				}
+			}
+		}
+	}
+}
+
+Items: {
+	example_weapon: {
+		DisplayName: example_weapon
+		Tooltip: ""
+	}
+}

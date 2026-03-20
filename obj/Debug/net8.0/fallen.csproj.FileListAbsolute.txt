@@ -1,0 +1,12 @@
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\bin\Debug\net8.0\fallen.deps.json
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\bin\Debug\net8.0\fallen.dll
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\bin\Debug\net8.0\fallen.pdb
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.AssemblyInfo.cs
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.dll
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\refint\fallen.dll
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.pdb
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\ref\fallen.dll
