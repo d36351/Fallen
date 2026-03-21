@@ -10,3 +10,4 @@ C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj
 C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\refint\fallen.dll
 C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.pdb
 C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\ref\fallen.dll
+C:\Users\user\OneDrive\文件\My Games\Terraria\tModLoader\ModSources\fallen\obj\Debug\net8.0\fallen.sourcelink.json

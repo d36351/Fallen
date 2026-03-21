@@ -2,6 +2,8 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+
+using Terraria.Localization;
 namespace fallen.FallenItem.Weapon
 {
 
@@ -16,20 +18,20 @@ namespace fallen.FallenItem.Weapon
         public override void SetDefaults()
         {
             // === 基础战斗属性 ===
-            Item.damage = 150;            // 基础伤害值
+            Item.damage = 15000;            // 基础伤害值
             Item.DamageType = DamageClass.Melee; // 伤害类型
-            Item.crit = 35;              // 暴击率加成(%)
+            Item.crit = 90;              // 暴击率加成(%)
             Item.knockBack = 6;          // 击退力度
 
             // === 视觉与尺寸属性 ===
-            Item.width = 40;             // 贴图宽度(像素)
-            Item.height = 40;            // 贴图高度(像素)
+            Item.width = 400;             // 贴图宽度(像素)
+            Item.height = 400;            // 贴图高度(像素)
             Item.rare = ItemRarityID.Blue; // 稀有度等级
             Item.value = Item.buyPrice(silver: 1); // 物品价值
 
             // === 使用行为参数 ===
-            Item.useTime = 20;           // 使用间隔(帧)
-            Item.useAnimation = 20;      // 动画时长(帧)
+            Item.useTime = 2;           // 使用间隔(帧)
+            Item.useAnimation = 2;      // 动画时长(帧)
             Item.useStyle = ItemUseStyleID.Swing; // 使用动作类型
             Item.UseSound = SoundID.Item1; // 使用音效
             Item.autoReuse = true;       // 启用自动重复使用
@@ -44,7 +46,7 @@ namespace fallen.FallenItem.Weapon
             Item.noUseGraphic = false;   // 隐藏使用动画
             Item.accessory = false;      // 是否为饰品
             Item.consumable = false;     // 是否为消耗品
-            Item.defense = 150;            // 防御力加成
+            Item.defense = 15000;            // 防御力加成
             Item.maxStack = 9999;           // 最大堆叠量
 
             // === 工具属性 ===
@@ -59,6 +61,7 @@ namespace fallen.FallenItem.Weapon
         }
         public override void AddRecipes()
         {
+
             Recipe rescipe = CreateRecipe();
             rescipe.AddIngredient(ItemID.DirtBlock, 10);
             rescipe.AddTile(TileID.WorkBenches);

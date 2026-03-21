@@ -11,13 +11,61 @@ Mods: {
 						'''
 				}
 			}
+
+			Accessories: {
+				cheat_ring: {
+					DisplayName: 示例戒指
+					Tooltip:
+						'''
+						新手Modder的入门饰品
+						+10%暴击伤害
+						'''
+				}
+			}
 		}
 	}
 }
 
 Items: {
+	cheat_ring: {
+		DisplayName: cheat_ring
+		Tooltip: only cheater wear this
+	}
+
 	example_weapon: {
 		DisplayName: example_weapon
+		Tooltip: text_sample
+	}
+
+	example_ammorBreastplate: {
+		DisplayName: example_ammor Breastplate
 		Tooltip: ""
+	}
+
+	example_ammo: {
+		DisplayName: example_ammo
+		Tooltip: ""
+	}
+
+	example_potion: {
+		DisplayName: example_potion
+		Tooltip: ""
+	}
+
+	example_event_summon: {
+		DisplayName: example_event_summon
+		Tooltip: ""
+	}
+
+	example_boss_summon: {
+		DisplayName: example_boss_summon
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	example_buff: {
+		DisplayName: example_buff
+		Description: Mods.fallen.Buffs.example_buff.Description
 	}
 }

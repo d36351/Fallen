@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.DataStructures;
+using fallen.Buff;
+
+namespace fallen.FallenItem.Potion
+{
+    public class example_potion : ModItem
+    {
+        public override void SetDefaults()
+        {
+            Item.width = 22;
+            Item.height = 22;
+            Item.rare = ItemRarityID.Yellow;
+
+            //使用属性
+            Item.useStyle = ItemUseStyleID.DrinkLiquid;
+            Item.useAnimation = 17;
+            Item.useTime = 17;
+            Item.UseSound = SoundID.Item3;
+
+            //药剂设定
+            Item.consumable = true; //将物品设定为消耗品
+            Item.buffType = ModContent.BuffType<example_buff>(); // 使用 mod 的 BUFF
+            Item.buffTime = 7200; //BUFF的持续时间, 此处为7200帧, 即2分钟
+        }
+        public override bool ConsumeItem(Player player)
+        {
+            return true; //返回true则消耗, 反之亦然
+        }
+
+        public override void OnConsumeItem(Player player)
+        {
+            player.AddBuff(BuffID.Battle, 5000);
+            player.AddBuff(ModContent.BuffType<example_buff>(), 72000);
+        }
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient(ItemID.DirtBlock, 1);
+            recipe.AddTile(TileID.WorkBenches);
+            recipe.Register();
+
+        }
+
+    }
+}
