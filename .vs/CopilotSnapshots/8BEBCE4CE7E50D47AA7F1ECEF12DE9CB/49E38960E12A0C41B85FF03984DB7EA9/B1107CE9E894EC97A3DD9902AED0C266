@@ -25,19 +25,14 @@ namespace fallen.FallenItem.SummonItem
         {
             ItemID.Sets.SortingPriorityBossSpawns[Type] = 19;
         }
-
-        public override bool CanUseItem(Player player)
+        public override bool ConsumeItem(Player player)
         {
-
-            bool n = !Main.dayTime;
-            return NPC.AnyNPCs(NPCID.EyeofCthulhu) ? false : true && n;
+            bool n = Main.dayTime;
+            return NPC.AnyNPCs(NPCID.EyeofCthulhu) ? false:true&&n;
         }
 
         public override bool? UseItem(Player player)
         {
-            if (!CanUseItem(player))
-                return false;
-
             NPC.SpawnBoss((int)player.Center.X+50, (int)player.Center.Y+50, NPCID.EyeofCthulhu, player.whoAmI);
             return true;
         }
@@ -48,7 +43,5 @@ namespace fallen.FallenItem.SummonItem
             recipe.AddTile(TileID.WorkBenches);
             recipe.Register();
         }
-
-
     }
 }

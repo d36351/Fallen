@@ -1,31 +1,3 @@
-Mods: {
-	ExampleMod: {
-		Items: {
-			Weapons: {
-				example_sword: {
-					DisplayName: 示例长剑
-					Tooltip:
-						'''
-						新手Modder的入门武器
-						+20%暴击率
-						'''
-				}
-			}
-
-			Accessories: {
-				cheat_ring: {
-					DisplayName: 示例戒指
-					Tooltip:
-						'''
-						新手Modder的入门饰品
-						+10%暴击伤害
-						'''
-				}
-			}
-		}
-	}
-}
-
 Items: {
 	cheat_ring: {
 		DisplayName: cheat_ring
@@ -54,11 +26,16 @@ Items: {
 
 	example_event_summon: {
 		DisplayName: example_event_summon
-		Tooltip: ""
+		Tooltip: still useless
 	}
 
 	example_boss_summon: {
 		DisplayName: example_boss_summon
+		Tooltip: ""
+	}
+
+	example_grab_bag: {
+		DisplayName: example_grab_bag
 		Tooltip: ""
 	}
 }
@@ -69,3 +46,5 @@ Buffs: {
 		Description: Mods.fallen.Buffs.example_buff.Description
 	}
 }
+
+Projectiles.example_projectile.DisplayName: example_projectile

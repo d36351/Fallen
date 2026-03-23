@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using fallen.Projectiles;
 
 using Terraria.Localization;
 namespace fallen.FallenItem.Weapon
@@ -55,7 +56,7 @@ namespace fallen.FallenItem.Weapon
             Item.hammer = 0;             // 锤力
 
             // === 弹幕系统 ===
-            Item.shoot = ProjectileID.None; // 发射弹幕ID
+            Item.shoot = ModContent.ProjectileType<example_projectile>(); // 发射弹幕ID
             Item.shootSpeed = 10;        // 弹幕初速度
             Item.channel = false;        // 是否为蓄力武器
         }
