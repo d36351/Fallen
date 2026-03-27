@@ -47,4 +47,9 @@ Buffs: {
 	}
 }
 
-Projectiles.example_projectile.DisplayName: example_projectile
+Projectiles: {
+	example_projectile.DisplayName: example_projectile
+	FakeScriptureProjectile1.DisplayName: Fake Scripture Projectile1
+}
+
+NPCs.FakeScripture.DisplayName: Fake Scripture

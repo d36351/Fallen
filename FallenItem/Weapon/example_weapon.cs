@@ -31,8 +31,8 @@ namespace fallen.FallenItem.Weapon
             Item.value = Item.buyPrice(silver: 1); // 物品价值
 
             // === 使用行为参数 ===
-            Item.useTime = 2;           // 使用间隔(帧)
-            Item.useAnimation = 2;      // 动画时长(帧)
+            Item.useTime = 20;           // 使用间隔(帧)
+            Item.useAnimation = 20;      // 动画时长(帧)
             Item.useStyle = ItemUseStyleID.Swing; // 使用动作类型
             Item.UseSound = SoundID.Item1; // 使用音效
             Item.autoReuse = true;       // 启用自动重复使用

@@ -1,0 +1,87 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.Xna.Framework;
+using System.Text;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace fallen.Projectiles
+{
+
+    public class example_projectile : ModProjectile
+    {
+
+        public override void SetDefaults()
+        {
+            Projectile.timeLeft = 300; // 弹幕的存活时间（单位：帧）
+            Projectile.Size = new(100, 100); // 弹幕的体积,影响弹幕的碰撞箱
+            Projectile.aiStyle = -1; // 弹幕的AI类型
+            AIType = -1; // 弹幕的AIType,与AI类型配合使用,AI调用时候根据AIType决定调用对应type的AI
+            Projectile.friendly = true; // 允许伤害敌对NPC
+            Projectile.hostile = false; // 允许伤害玩家,与上面不冲突
+            Projectile.hide = false; // 隐藏弹幕,这个东西绘制篇会讲到
+            Projectile.ownerHitCheck = false; // 这个用于检查玩家与弹幕之间是否隔着墙,为true的时候隔着墙弹幕就不会造成伤害
+            Projectile.usesLocalNPCImmunity = true; // 独立无敌帧启用
+            Projectile.localNPCHitCooldown = 10;
+
+
+        }
+        public override void AI()
+        {
+             float l = 0f, a = 0f, b = 0f, r = 0f, f_s = 0f;
+             var n = Projectile.rotation;
+            if (Projectile.ai[0] == 0f)
+            {
+                Projectile.rotation = Projectile.velocity.ToRotation();
+                var rand = new Random();
+                 l = 200.0f;
+                 r = 50.0f;
+                float r_a = rand.Next(0, 360);
+                a = r_a;
+                 f_s = r * r + l * l - 2 * r * l * (float)Math.Cos(a);
+                 b = (float)Math.Acos((r * r + f_s - l * l) / (2 * r * Math.Sqrt(f_s)));// 记录初始速度的朝向
+                
+            }
+            Projectile.ai[0] += 0.1f;
+
+            if (Projectile.ai[0] <= 2.0f)
+            {
+                Projectile.velocity = (n+a).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
+            }
+            else
+            {
+  
+                Projectile.velocity = (n+a+b).ToRotationVector2().RotatedBy(Projectile.rotation) * 12;
+            }
+
+            var dust = Dust.NewDustDirect(Projectile.Center, 1, 1, DustID.FireworkFountain_Red); // 粒子生成
+            dust.velocity *= 0;
+            dust.noGravity = true;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

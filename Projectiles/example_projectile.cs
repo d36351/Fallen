@@ -6,53 +6,58 @@ using System.Text;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 namespace fallen.Projectiles
 {
     public class example_projectile : ModProjectile
     {
         public override void SetDefaults()
         {
-            Projectile.timeLeft = 300; // 弹幕的存活时间（单位：帧）
-            Projectile.Size = new(100, 100); // 弹幕的体积,影响弹幕的碰撞箱
-            Projectile.aiStyle = -1; // 弹幕的AI类型
-            AIType = -1; // 弹幕的AIType,与AI类型配合使用,AI调用时候根据AIType决定调用对应type的AI
-            Projectile.friendly = true; // 允许伤害敌对NPC
-            Projectile.hostile = false; // 允许伤害玩家,与上面不冲突
-            Projectile.hide = false; // 隐藏弹幕,这个东西绘制篇会讲到
-            Projectile.ownerHitCheck = false; // 这个用于检查玩家与弹幕之间是否隔着墙,为true的时候隔着墙弹幕就不会造成伤害
-            Projectile.usesLocalNPCImmunity = true; // 独立无敌帧启用
+            Projectile.timeLeft = 200; 
+            Projectile.Size = new(100, 100);
+            Projectile.aiStyle = -1; 
+            AIType = -1; 
+            Projectile.friendly = true; 
+            Projectile.hostile = false; 
+            Projectile.hide = false; 
+            Projectile.ownerHitCheck = false; 
+            Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 10;
-
-
         }
         public override void AI()
         {
-            
+            const float l = 200.0f;
+            const float r = 50.0f;
+            float a = 0f,b=0f,f_s=0f; 
+            var rand = new Random();
             if (Projectile.ai[0] == 0f)
-                Projectile.rotation = Projectile.velocity.ToRotation(); // 记录初始速度的朝向
-                var n = Projectile.rotation;
-            Projectile.ai[0] += 0.1f;
-            if (Projectile.ai[0] <= 2.0f)
             {
-                Projectile.velocity = (n + 30).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
-                //
-
+                Projectile.rotation = Projectile.velocity.ToRotation();
+                a = rand.Next(0, 7);   
+                f_s = r * r + l * l - 2 * r * l * (float)Math.Cos(a);
+                b = (float)Math.Acos(-(r * r + f_s - l * l) / (2 * r * Math.Sqrt(f_s)));
+                if (a > 3) b = -b;
+                Projectile.ai[1] = a;
+                Projectile.ai[2] = b;              
             }
-            else if (Projectile.ai[0] > 2.0f && Projectile.ai[0] <= 6.0f) {
+            else
+            {         
+                a = Projectile.ai[1];
+                b=Projectile.ai[2];
+            }
+            var n = Projectile.rotation;
+            Projectile.ai[0] += 0.1f;
+            if (Projectile.ai[0] <= 3.0f)
+            {
+                Projectile.velocity = (- a).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
+            }
+            else if(Projectile.ai[0] > 3.0f && Projectile.ai[0] <=6.0f) {
                 Projectile.velocity *= 0;
             }
             else
             {
-                //Projectile.rotation = n + 90.0f;
-                Projectile.velocity = (Projectile.rotation-60.0f).ToRotationVector2().RotatedBy(Projectile.rotation) * 12;
+                Projectile.velocity = (-a + b).ToRotationVector2().RotatedBy(Projectile.rotation) * 12;
             }
-                
-            //Projectile.velocity = (MathF.Cos(Projectile.ai[0])).ToRotationVector2().RotatedBy(Projectile.rotation)*5;
-
-            var dust = Dust.NewDustDirect(Projectile.Center, 1, 1, DustID.FireworkFountain_Red); // 粒子生成
-            dust.velocity *= 0;
-            dust.noGravity = true;
         }
     }
 }

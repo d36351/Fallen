@@ -1,0 +1,68 @@
+﻿//using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace fallen.NPCs.FakeScripture
+{
+    public class FakeScripture : ModNPC
+    {
+        public override void SetDefaults()
+        {
+            NPC.width = 80;//NPC的宽度
+            NPC.height = 120;//NPC的高度
+            NPC.damage = 50;//NPC的接触伤害
+            NPC.defense = 20;//NPC的防御力
+            NPC.lifeMax = 10000;//NPC的最大生命值
+            NPC.HitSound = SoundID.NPCHit2;// NPC被击中的声音 官方ID可见此处 https://terraria.wiki.gg/wiki/Sound_IDs
+            NPC.DeathSound = SoundID.NPCDeath2;// NPC死亡时的声音
+            NPC.value = 10000f;// NPC的价值(死亡后掉落的钱)
+            NPC.knockBackResist = 0f;// NPC的击退抗性
+            NPC.boss = true;// 是否为BOSS
+            NPC.townNPC = false;// 是否为城镇NPC
+            NPC.noGravity = true;// NPC是否受重力影响
+            NPC.noTileCollide = true;// NPC是否与方块碰撞
+            NPC.netAlways = true;// NPC是否总是同步到客户端
+
+            NPC.aiStyle = -1;// 自定义AI样式自定义为-1 官方ID可见此处 http://docs.tmodloader.net/docs/stable/class_n_p_c_a_i_style_i_d.html
+        }
+        public override void SetStaticDefaults()
+        {
+            Main.npcFrameCount[NPC.type] = 6;
+        }
+        int attackcooldown = 0;//定义攻击冷却(应为AI为每一帧都执行,所以要控制时间)
+        public override void AI() //自定义AI
+        {
+            attackcooldown++;//每帧+1
+            /*if (attackcooldown >= 60)//如果大于60则发射一次ProjectileID.EyeLaser
+             {
+                 Vector2 velocity = (target.Center - NPC.Center).SafeNormalize(Vector2.Zero) * 10f;//射弹速度
+                 if (velocity != Vector2.Zero)//如果射弹速度不为0向量
+                 {
+                     Projectile.NewProjectile(NPC.GetSource_FromAI(), new Vector2(NPC.Center.X, NPC.Center.Y), velocity, ProjectileID.EyeLaser, 40, 3f);//则射出ProjectileID.EyeLaser
+                 }
+                 attackcooldown = 0;//冷却为0
+             }*/
+
+        }
+        public override void FindFrame(int frameHeight)
+        {
+            int totalFrames = 6;
+            int ticksPerFrame = 12;
+
+            NPC.frameCounter += NPC.IsABestiaryIconDummy ? 1.65 : 1.0;
+
+            if (NPC.frameCounter >= totalFrames * ticksPerFrame)
+            {
+                NPC.frameCounter = 0;
+            }
+
+            int frame = (int)(NPC.frameCounter / ticksPerFrame);
+            NPC.frame.Y = frame * frameHeight;
+
+
+
+        }
+    }
+}
+

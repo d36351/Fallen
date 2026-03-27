@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fallen.NPCs.FakeScripture;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,7 @@ namespace fallen.FallenItem.SummonItem
         {
 
             bool n = !Main.dayTime;
-            return NPC.AnyNPCs(NPCID.EyeofCthulhu) ? false : true && n;
+            return NPC.AnyNPCs(ModContent.NPCType<FakeScripture>()) ? false : true && !n;
         }
 
         public override bool? UseItem(Player player)
@@ -38,7 +39,7 @@ namespace fallen.FallenItem.SummonItem
             if (!CanUseItem(player))
                 return false;
 
-            NPC.SpawnBoss((int)player.Center.X+50, (int)player.Center.Y+50, NPCID.EyeofCthulhu, player.whoAmI);
+            NPC.SpawnBoss((int)player.Center.X+50, (int)player.Center.Y+50, ModContent.NPCType<FakeScripture>(), player.whoAmI);
             return true;
         }
         public override void AddRecipes()
