@@ -17,12 +17,14 @@ namespace fallen.Projectiles
             Projectile.Size = new(100, 100);
             Projectile.aiStyle = -1; 
             AIType = -1; 
-            Projectile.friendly = true; 
+            Projectile.friendly = true;
+    
             Projectile.hostile = false; 
             Projectile.hide = false; 
             Projectile.ownerHitCheck = false; 
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 10;
+            Projectile.tileCollide = false;
         }
         public override void AI()
         {
@@ -51,6 +53,7 @@ namespace fallen.Projectiles
             {
                 Projectile.velocity = (- a).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
             }
+            
             else if(Projectile.ai[0] > 3.0f && Projectile.ai[0] <=6.0f) {
                 Projectile.velocity *= 0;
             }

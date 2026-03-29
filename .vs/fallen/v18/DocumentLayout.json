@@ -3,32 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\fakescripture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\fakescripture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\child1laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\child1laser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\fakescripture.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\fakescripture.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\fallenitem\\summonitem\\example_boss_summon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:fallenitem\\summonitem\\example_boss_summon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\scripturechildprojectile1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\scripturechildprojectile1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\fakescriptureprojectile1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\fakescriptureprojectile1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\fallenitem\\weapon\\example_weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:fallenitem\\weapon\\example_weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\fakescripture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\fakescripture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\scriptureprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\scriptureprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\projectiles\\example_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:projectiles\\example_projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\fallenitem\\summonitem\\example_boss_summon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:fallenitem\\summonitem\\example_boss_summon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\scripturechildprojectile1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\scripturechildprojectile1.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\npcs\\fakescripture\\scriptureprojectile.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:npcs\\fakescripture\\scriptureprojectile.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\projectiles\\example_projectile.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:projectiles\\example_projectile.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\fallenitem\\weapon\\example_weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|solutionrelative:fallenitem\\weapon\\example_weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71B70359-8928-E54D-217F-D4D2F7AC2FF1}|fallen.csproj|c:\\users\\user\\onedrive\\\u6587\u4EF6\\my games\\terraria\\tmodloader\\modsources\\fallen\\fallenitem\\potion\\example_potion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,63 +102,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Child1Laser.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\Child1Laser.cs",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\Child1Laser.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\Child1Laser.cs",
+              "RelativeToolTip": "NPCs\\FakeScripture\\Child1Laser.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA0wD4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T15:13:24.013Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FakeScripture.png",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScripture.png",
-              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\FakeScripture.png",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScripture.png",
-              "RelativeToolTip": "NPCs\\FakeScripture\\FakeScripture.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2026-03-27T06:52:14.608Z"
+              "DocumentIndex": 4,
+              "Title": "ScriptureProjectile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureProjectile.cs",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\ScriptureProjectile.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureProjectile.cs",
+              "RelativeToolTip": "NPCs\\FakeScripture\\ScriptureProjectile.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T10:13:25.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "example_boss_summon.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\SummonItem\\example_boss_summon.cs",
-              "RelativeDocumentMoniker": "FallenItem\\SummonItem\\example_boss_summon.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\SummonItem\\example_boss_summon.cs",
-              "RelativeToolTip": "FallenItem\\SummonItem\\example_boss_summon.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwCEAAABXAAAAAAAAAA==",
+              "Title": "FakeScriptureProjectile1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
+              "RelativeToolTip": "NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwDcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T16:22:03.184Z"
+              "WhenOpened": "2026-03-27T05:40:37.56Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "example_projectile.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.cs",
+              "RelativeDocumentMoniker": "Projectiles\\example_projectile.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.cs",
+              "RelativeToolTip": "Projectiles\\example_projectile.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwDUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T12:33:48.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FakeScripture.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScripture.cs",
               "RelativeDocumentMoniker": "NPCs\\FakeScripture\\FakeScripture.cs",
               "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScripture.cs",
               "RelativeToolTip": "NPCs\\FakeScripture\\FakeScripture.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA1wEIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAIAzwJwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T14:38:54.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FakeScriptureProjectile1.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
-              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
-              "RelativeToolTip": "NPCs\\FakeScripture\\FakeScriptureProjectile1.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAiwBQAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ScriptureChildProjectile1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureChildProjectile1.cs",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\ScriptureChildProjectile1.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureChildProjectile1.cs",
+              "RelativeToolTip": "NPCs\\FakeScripture\\ScriptureChildProjectile1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T05:40:37.56Z"
+              "WhenOpened": "2026-03-28T12:07:00.168Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "example_boss_summon.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\SummonItem\\example_boss_summon.cs",
+              "RelativeDocumentMoniker": "FallenItem\\SummonItem\\example_boss_summon.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\SummonItem\\example_boss_summon.cs",
+              "RelativeToolTip": "FallenItem\\SummonItem\\example_boss_summon.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCkAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T16:22:03.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScriptureChildProjectile1.png",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureChildProjectile1.png",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\ScriptureChildProjectile1.png",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureChildProjectile1.png",
+              "RelativeToolTip": "NPCs\\FakeScripture\\ScriptureChildProjectile1.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-03-29T03:17:18.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ScriptureProjectile.png",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureProjectile.png",
+              "RelativeDocumentMoniker": "NPCs\\FakeScripture\\ScriptureProjectile.png",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\NPCs\\FakeScripture\\ScriptureProjectile.png",
+              "RelativeToolTip": "NPCs\\FakeScripture\\ScriptureProjectile.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-03-28T13:06:18.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "example_projectile.png",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.png",
+              "RelativeDocumentMoniker": "Projectiles\\example_projectile.png",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.png",
+              "RelativeToolTip": "Projectiles\\example_projectile.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-03-23T15:25:25.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "example_weapon.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Weapon\\example_weapon.cs",
               "RelativeDocumentMoniker": "FallenItem\\Weapon\\example_weapon.cs",
@@ -154,19 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "example_projectile.cs",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.cs",
-              "RelativeDocumentMoniker": "Projectiles\\example_projectile.cs",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.cs",
-              "RelativeToolTip": "Projectiles\\example_projectile.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T12:33:48.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "example_grab_bag.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\GrabBag\\example_grab_bag.cs",
               "RelativeDocumentMoniker": "FallenItem\\GrabBag\\example_grab_bag.cs",
@@ -178,18 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "example_projectile.png",
-              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.png",
-              "RelativeDocumentMoniker": "Projectiles\\example_projectile.png",
-              "ToolTip": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Projectiles\\example_projectile.png",
-              "RelativeToolTip": "Projectiles\\example_projectile.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2026-03-23T15:25:25.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "example_potion.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Potion\\example_potion.cs",
               "RelativeDocumentMoniker": "FallenItem\\Potion\\example_potion.cs",
@@ -201,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "example_event_summon.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\SummonItem\\example_event_summon.cs",
               "RelativeDocumentMoniker": "FallenItem\\SummonItem\\example_event_summon.cs",
@@ -213,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "example_buff.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Buff\\example_buff.cs",
               "RelativeDocumentMoniker": "Buff\\example_buff.cs",
@@ -225,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "en-US_Mods.fallen.hjson",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Localization\\en-US_Mods.fallen.hjson",
               "RelativeDocumentMoniker": "Localization\\en-US_Mods.fallen.hjson",
@@ -237,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "example_ammo.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Ammo\\example_ammo.cs",
               "RelativeDocumentMoniker": "FallenItem\\Ammo\\example_ammo.cs",
@@ -249,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "example_potion.png",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Potion\\example_potion.png",
               "RelativeDocumentMoniker": "FallenItem\\Potion\\example_potion.png",
@@ -260,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "example_ammo.png",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Ammo\\example_ammo.png",
               "RelativeDocumentMoniker": "FallenItem\\Ammo\\example_ammo.png",
@@ -271,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "example_ammorBreastplate.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Ammor\\example_ammor\\example_ammorBreastplate.cs",
               "RelativeDocumentMoniker": "FallenItem\\Ammor\\example_ammor\\example_ammorBreastplate.cs",
@@ -283,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "example_weapon.png",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Weapon\\example_weapon.png",
               "RelativeDocumentMoniker": "FallenItem\\Weapon\\example_weapon.png",
@@ -294,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "cheat_ring.cs",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\FallenItem\\Accessories\\cheat_ring.cs",
               "RelativeDocumentMoniker": "FallenItem\\Accessories\\cheat_ring.cs",
@@ -306,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\\u6587\u4EF6\\My Games\\Terraria\\tModLoader\\ModSources\\fallen\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",

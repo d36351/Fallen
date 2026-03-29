@@ -1,0 +1,71 @@
+﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.Xna.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+namespace fallen.NPCs.FakeScripture.ScriptureHands
+{
+    public class ScriptureChildProjectile : ModProjectile
+    {
+        public override void SetDefaults()
+        {
+            Projectile.timeLeft = 300;
+            Projectile.Size = new(150, 150);
+            Projectile.aiStyle = -1;
+            AIType = -1;
+            //Projectile.height = 358;
+            //Projectile.width = 300;
+            Projectile.friendly = false;
+            Projectile.hostile = true;
+            Projectile.hide = false;
+            Projectile.ownerHitCheck = true;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 10;
+            Projectile.tileCollide = false;
+        }
+        public override void SetStaticDefaults()
+        {
+            Main.projFrames[Type] = 4;
+            //ProjectileID.Sets.TrailCacheLength[Type] = 4;
+            //ProjectileID.Sets.TrailingMode[Type] = 0;
+        }
+
+        public override void AI()
+        {
+
+            var rand = new Random();
+
+            if (Projectile.ai[0] == 0f)
+            {
+                // incoming Projectile.position is the center; convert to top-left position
+                
+              //Projectile.Center = Projectile.position;
+                Projectile.rotation = Projectile.velocity.ToRotation();
+                //Projectile.position -= new Vector2(Projectile.width / 2f, Projectile.height / 2f);
+                var n = Projectile.rotation;
+
+            }
+            else
+            {
+                Projectile.velocity = new Vector2(0,0);// new Vector2((float)Math.Sin(Projectile.rotation), (float)Math.Cos(Projectile.rotation));
+               
+            }
+            Projectile.ai[0]++;
+
+            if (Projectile.frame!=4 ) Projectile.frameCounter++;
+            if (Projectile.frameCounter > 4 && Projectile.frame<=3)
+            {
+                Projectile.frame+=1;
+                Projectile.frameCounter = 0;
+            }
+
+
+        }
+        public override bool CanHitPlayer(Player target) => Projectile.Opacity == 1f;
+    }
+}

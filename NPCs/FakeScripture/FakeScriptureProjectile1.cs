@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
+
 using System.Text;
 using Terraria;
 using Terraria.ID;
@@ -14,54 +15,58 @@ namespace fallen.NPCs.FakeScripture
         public override void SetDefaults()
         {
             Projectile.timeLeft = 200;
-            Projectile.Size = new(100, 100);
+            Projectile.Size = new(50, 50);
             Projectile.aiStyle = -1;
             AIType = -1;
-            Projectile.friendly = true;
+            Projectile.friendly = false;
             Projectile.hostile = false;
             Projectile.hide = false;
-            Projectile.ownerHitCheck = false;
+            Projectile.ownerHitCheck = true;
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 10;
+            Projectile.tileCollide = false;
+        }
+        public override void SetStaticDefaults()
+        {
+            Main.projFrames[Type] = 4;
+            ProjectileID.Sets.TrailCacheLength[Type] = 4;
+            ProjectileID.Sets.TrailingMode[Type] = 0;
+            Main.projFrames[Type] = 4;
+            ProjectileID.Sets.TrailCacheLength[Type] = 4;
+            ProjectileID.Sets.TrailingMode[Type] = 0;
         }
         public override void AI()
         {
-            const float l = 200.0f;
-            const float r = 50.0f;
-            float a = 0f, b = 0f, f_s = 0f;
+ 
             var rand = new Random();
+            
             if (Projectile.ai[0] == 0f)
             {
+                Projectile.ai[1] = (float)rand.Next(-30, 30) / 60;
                 Projectile.rotation = Projectile.velocity.ToRotation();
-                a = rand.Next(0, 7);
-                f_s = r * r + l * l - 2 * r * l * (float)Math.Cos(a);
-                b = (float)Math.Acos(-(r * r + f_s - l * l) / (2 * r * Math.Sqrt(f_s)));
-                if (a > 3) b = -b;
-                Projectile.ai[1] = a;
-                Projectile.ai[2] = b;
+
+                var n = Projectile.rotation;
+                Projectile.velocity *=5;
             }
             else
             {
-                a = Projectile.ai[1];
-                b = Projectile.ai[2];
+                //Projectile.velocity = (Projectile.rotation).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
             }
-            var n = Projectile.rotation;
-            Projectile.ai[0] += 0.1f;
-            if (Projectile.ai[0] <= 3.0f)
+            Projectile.ai[0]++;
+            if (Projectile.frameCounter++ > 8)
             {
-                Projectile.velocity = (-a).ToRotationVector2().RotatedBy(Projectile.rotation) * 5;
+                Projectile.frameCounter = 0;
+                Projectile.frame++;
+
+                if (Projectile.frame >= 4)
+                    Projectile.frame = 0; // 或停在最後一幀
             }
-            else if (Projectile.ai[0] > 3.0f && Projectile.ai[0] <= 6.0f)
-            {
-                Projectile.velocity *= 0;
-            }
-            else
-            {
-                Projectile.velocity = (-a + b).ToRotationVector2().RotatedBy(Projectile.rotation) * 12;
-            }
+
+        }
         }
     }
-}
 
 
 
+
+;

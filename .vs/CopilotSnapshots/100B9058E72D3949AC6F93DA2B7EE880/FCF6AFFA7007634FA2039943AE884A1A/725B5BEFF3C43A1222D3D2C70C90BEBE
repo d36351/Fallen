@@ -1,0 +1,75 @@
+﻿using fallen.NPCs.FakeScripture.ScriptureHands;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.Xna.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+namespace fallen.NPCs.FakeScripture
+{
+    public class ScriptureProjectile : ModProjectile
+    {
+        public override void SetDefaults()
+        {
+            Projectile.timeLeft = 400;
+            Projectile.Size = new(100, 100);
+            Projectile.aiStyle = -1;
+            AIType = -1;
+            Projectile.friendly = false;
+            Projectile.hostile = false;
+            Projectile.hide = false;
+            Projectile.ownerHitCheck = true;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 10;
+            Projectile.tileCollide = false;
+        }
+        public override void AI()
+        {
+ 
+            var rand = new Random();
+            
+            if (Projectile.ai[0] == 0f)
+            {
+                
+ 
+
+                Projectile.ai[2] = rand.Next(0,3 );
+                
+      
+            }
+            else
+            {
+                Projectile.velocity = (Projectile.ai[1]).ToRotationVector2().RotatedBy(Projectile.rotation) *(1/ (float)( Projectile.ai[0]+20)*20);
+                
+            }
+
+            if (Projectile.ai[0] < 80f )
+            {
+                Vector2 playerCenter = Projectile.Center;
+                int idx = Player.FindClosest(Projectile.Center, 1, 1);
+                if (idx >= 0 && Main.player[idx].active)
+                {
+                    playerCenter = Main.player[idx].Center;
+
+                }
+          
+      
+                    Projectile.rotation = (playerCenter - Projectile.Center).ToRotation();
+    
+              
+            }
+                if (Projectile.ai[0] == 100f)
+            {
+               
+                Projectile.NewProjectile(Projectile.GetSource_FromAI(), Projectile.position, Projectile.rotation.ToRotationVector2(), ModContent.ProjectileType<ScriptureChildProjectile>(), 20, 0f, Main.myPlayer, Projectile.ai[1], Projectile.ai[2]);
+            }
+            Projectile.ai[0]++;
+
+
+        }
+    }
+}

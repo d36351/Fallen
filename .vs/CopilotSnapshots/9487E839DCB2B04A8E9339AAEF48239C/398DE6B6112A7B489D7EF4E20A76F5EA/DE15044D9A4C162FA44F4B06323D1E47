@@ -1,0 +1,70 @@
+﻿//using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+//using System.Numerics;
+using Steamworks;
+using Microsoft.Xna.Framework;
+namespace fallen.NPCs.FakeScripture
+{
+    public class FakeScripture : ModNPC
+    {
+        public override void SetDefaults()
+        {
+            NPC.width = 80;//NPC的宽度
+            NPC.height = 120;//NPC的高度
+            NPC.damage = 50;//NPC的接触伤害
+            NPC.defense = 20;//NPC的防御力
+            NPC.lifeMax = 10000;//NPC的最大生命值
+            NPC.HitSound = SoundID.NPCHit2;// NPC被击中的声音 官方ID可见此处 https://terraria.wiki.gg/wiki/Sound_IDs
+            NPC.DeathSound = SoundID.NPCDeath2;// NPC死亡时的声音
+            NPC.value = 10000f;// NPC的价值(死亡后掉落的钱)
+            NPC.knockBackResist = 0f;// NPC的击退抗性
+            NPC.boss = true;// 是否为BOSS
+            NPC.townNPC = false;// 是否为城镇NPC
+            NPC.noGravity = true;// NPC是否受重力影响
+            NPC.noTileCollide = true;// NPC是否与方块碰撞
+            NPC.netAlways = true;// NPC是否总是同步到客户端
+
+            NPC.aiStyle = -1;// 自定义AI样式自定义为-1 官方ID可见此处 http://docs.tmodloader.net/docs/stable/class_n_p_c_a_i_style_i_d.html
+        }
+        public override void SetStaticDefaults()
+        {
+            Main.npcFrameCount[NPC.type] = 6;
+        }
+        int attackcooldown = 0;//定义攻击冷却(应为AI为每一帧都执行,所以要控制时间)
+        public override void AI() //自定义AI
+        {
+
+            if (NPC.target < 0 || NPC.target == Main.maxPlayers || Main.player[NPC.target].dead || !Main.player[NPC.target].active)
+                NPC.TargetClosest();
+            Player player = Main.player[NPC.target];
+            Vector2 dir = Distance(player.Center, NPC.Center);
+        }
+        public override void FindFrame(int frameHeight)
+        {
+            NPC.frameCounter += NPC.IsABestiaryIconDummy ? 1.65 : 1.0;
+            if (NPC.ai[0] == 4f)
+            {
+                if (NPC.frameCounter > 72.0) //12
+                {
+                    NPC.frameCounter = 0.0;
+                }
+            }
+            else
+            {
+                int frameY = 196;
+                if (NPC.frameCounter > 72.0)
+                {
+                    NPC.frameCounter = 0.0;
+                }
+                NPC.frame.Y = frameY * (int)(NPC.frameCounter / 12.0); //1 to 6
+                if (NPC.frame.Y >= frameHeight * 6)
+                {
+                    NPC.frame.Y = 0;
+                }
+            }
+        }
+    }
+}
+

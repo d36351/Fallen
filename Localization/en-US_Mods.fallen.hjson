@@ -50,6 +50,12 @@ Buffs: {
 Projectiles: {
 	example_projectile.DisplayName: example_projectile
 	FakeScriptureProjectile1.DisplayName: Fake Scripture Projectile1
+	ScriptureProjectile.DisplayName: Scripture Projectile
+	ScriptureChildProjectile.DisplayName: Scripture Child Projectile
+	ScriptureChildProjectile1.DisplayName: Scripture Child Projectile1
 }
 
-NPCs.FakeScripture.DisplayName: Fake Scripture
+NPCs: {
+	FakeScripture.DisplayName: Fake Scripture
+	ScriptureProjectile.DisplayName: Scripture Projectile
+}

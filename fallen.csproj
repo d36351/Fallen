@@ -9,6 +9,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 	  <Folder Include="Golbal\" />
+	  <Folder Include="NPCs\FakeScripture\ScriptureHands\" />
 	</ItemGroup>
 
 	<!-- References -->
